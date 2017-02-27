@@ -1627,10 +1627,14 @@
             <!-- Masonry -->
             <script src="js/masonry.pkgd.min.js" type="text/javascript"></script>
             <script type="text/javascript">
-              $('.gallery').masonry({
-                itemSelector: '.grid-item',
-                columnWidth: 300,
-                isFitWidth: true
+              jQuery(window).on('load', function() { 
+              var $ = jQuery;
+              var $container = $('.gallery');
+                  $container.masonry({
+                      itemSelector: '.grid-item',
+                      columnWidth: 300, 
+                      isFitWidth: true
+                  });
               });
             </script>
 
