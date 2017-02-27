@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* If larger than 1366px */
+/* If Width larger than 1366px */
 @media only screen and (min-width: 1367px) {
     .logo img {
       position: absolute;
@@ -8,8 +8,11 @@
       height: auto;
       margin: -13px 0 0 0;
     }
+    .header .nav {
+      text-align: center;
+    }
 }
-/* If smaller than 1366px */
+/* If Width smaller than 1366px */
 @media only screen and (max-width: 1366px) {
     .logo img {
       width: auto;
@@ -18,6 +21,55 @@
       padding: 0 1em 0 2em;
     }
 }
+/* If Width smaller than 768px */
+@media only screen and (max-width: 768px) {
+    .logo img {
+      width: auto;
+      height: auto;
+      margin: 0 auto;
+      padding: 0 1em 1em 1em;
+    }
+}
+/* If Width smaller than 480px */
+@media only screen and (max-width: 480px) {
+    .header {
+      text-align: center;
+    }
+    .logo img {
+      width: 100%;
+      height: auto;
+      padding: 0 1em 1em 1em;
+    }
+}
+
+/* If Height Larger than 480px */
+@media only screen and (min-height: 480px) {
+    .featherlight .featherlight-content {
+      overflow: hidden !important; /* scrollbar fix */
+    }
+}
+/* If Width smaller than 480px */
+@media only screen and (max-width: 480px) {
+    .share {
+      display: block !important;
+      margin: 0 0 1em 0;
+    }
+}
+/* If Height smaller than 720px */
+@media only screen and (max-height: 720px) {
+    .share {
+      display: block !important;
+      margin: 0 0 1em 0;
+    }
+}
+/* If Height smaller than 480px */
+@media only screen and (max-height: 480px) {
+    .featherlight .featherlight-content {
+      overflow: scroll !important; /* scrollbar fix */
+    }
+}
+
+
 html, body {
   height: 100%;
   margin: 0;
@@ -46,15 +98,13 @@ img {
 }
 /* Logo */
 .logo a {
-  z-index: 1000;
+  z-index: 500;
   border: 0;
   margin: 0;
   padding: 0;
 }
-.logo img {
-
-}
 .header-title {
+  display: block;
   font-size: 1.4em;
   font-family: 'La Belle Aurore', cursive;
   padding: 1em;
@@ -64,7 +114,6 @@ img {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  text-align: center;
   font-family: 'Lustria', serif;
   font-size: 1.2em;
 }
@@ -80,6 +129,7 @@ img {
   
 }
 .header .nav-title {
+  display: block;
   padding: 1em;
 }
 
@@ -88,6 +138,7 @@ img {
   position: relative;
   flex: 0 0 auto;
   align-items: center;
+  justify-content: center;
   min-height: 70vh;
 }
 .content {
@@ -128,9 +179,13 @@ img {
 
 /* Gallery */
 .gallery {
-  z-index: 500;
+  z-index: 1000;
   margin: 0 auto 2em auto;
   text-align: center;
+}
+#loading-gallery {
+  font-size: 1.6em;
+  font-family: 'Lustria', serif;
 }
 .gallery .grid-item {
   margin: 1em;
