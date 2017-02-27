@@ -1,0 +1,234 @@
+@charset "utf-8";
+
+/* If larger than 1366px */
+@media only screen and (min-width: 1367px) {
+    .logo img {
+      position: absolute;
+      width: 348px;
+      height: auto;
+      margin: -13px 0 0 0;
+    }
+}
+/* If smaller than 1366px */
+@media only screen and (max-width: 1366px) {
+    .logo img {
+      width: auto;
+      height: 80px;
+      float: left;
+      padding: 0 1em 0 2em;
+    }
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'La Belle Aurore', cursive;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url('../img/bg.jpg');
+  background-attachment: fixed;
+  background-position: center top;
+}
+img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/* Header */
+.header {
+  background: white;
+}
+.header .container {
+  padding: 1.3em !important; /* override */
+}
+/* Logo */
+.logo a {
+  z-index: 1000;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.logo img {
+
+}
+.header-title {
+  font-size: 1.3em;
+  font-family: 'La Belle Aurore', cursive;
+  padding: 1em;
+}
+/* Navigation */
+.header .nav {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  font-family: 'Lustria', serif;
+  font-size: 1.2em;
+}
+.header .nav li {
+  display: inline-block;
+}
+.header .nav li a {
+  padding: 1em;
+  text-decoration: none;
+  
+}
+.header .nav li a:hover {
+  
+}
+.header .nav-title {
+  padding: 1em;
+}
+
+.flex {
+  display: flex;
+  position: relative;
+  flex: 0 0 auto;
+  align-items: center;
+  min-height: 70vh;
+}
+.content {
+
+}
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1560px;
+  padding: 2em;
+}
+
+/* Gallery */
+.gallery {
+  z-index: 500;
+  margin: 0 auto 2em auto;
+  text-align: center;
+}
+.gallery .grid-item {
+  margin: 1em;
+  padding: 1.5em;
+  background: white;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.15);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.15);
+}
+.gallery .grid-item a {
+
+}
+.gallery .thumb {
+  width: 220px;
+  height: auto;
+}
+
+/* Featherlight */
+.featherlight img {
+  min-width: 240px;
+  max-width: 100%;
+  max-height:75vh;
+}  
+.gallery-modal { 
+  /* Hide Modal Popup */
+  display: none;
+}
+.info {
+    padding: 1.4em 0 0.5em 0;
+    text-align: center;
+}
+.title {
+  display: block;
+  padding: 0 0 0.7em 0;
+  text-align: center;
+  font-size: 1.6em;
+  line-height: 1em;
+  vertical-align: middle;
+}
+.share {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+/* Clipboard.js */
+.clipboard-title {
+    display: inline-block;
+    width: 45px;
+    height: 32px;
+    text-align: center;
+    font-size: 13px;
+    color: #ddd;
+    background: #aaa;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    vertical-align: top;
+    padding: 6px 0 0 0;
+    cursor:default;
+}
+input.clipboard-link {
+    display: inline-block;
+    width: 180px;
+    margin: 0 -10px 0 0.5em;
+    padding: 0 0 0 0.5em;
+    font-size: 13px;
+    color: #000;
+    background-color: #fff;
+    border-top: 1px solid #aaa;
+    border-right: 0;
+    border-bottom: 1px solid #aaa;
+    border-left: 1px solid #aaa;
+    outline: none;
+    height: 30px;
+}
+.clippy {
+    margin-top: -3px;
+    position: relative;
+    top: 0px;
+}
+img.clippy {
+    border: 0;
+    min-width: 15px !important;
+    height: 15px !important;
+    margin: 0 auto;
+}
+
+.btn-copy {
+    display: inline-block;
+    height: 30px;
+    width: 36px;
+    vertical-align: top;
+    color: #000;
+    white-space: nowrap;
+    text-align: center;
+    touch-action: manipulation;
+    background-image: none;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.btn-copy img {
+  width: 15px !important;
+  height: 15px !important;
+}
+
+/* Footer */
+.footer {
+  z-index: 100;
+  position: relative;
+  flex: 1;
+  background: white;
+}     
+.copyright {
+  font-size: 1.2em;
+}
+.copyright a {
+  color: black;
+}
+.footer-share {
+  float: right;
+}
