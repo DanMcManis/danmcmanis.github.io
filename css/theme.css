@@ -3,10 +3,10 @@
 /* If Width larger than 1366px */
 @media only screen and (min-width: 1367px) {
     .logo img {
-      position: absolute;
-      width: 348px;
-      height: auto;
-      margin: -13px 0 0 0;
+        position: absolute;
+        width: 360px;
+        height: auto;
+        margin: -14px 0 0 -14px;
     }
     .header .nav {
       text-align: center;
@@ -107,7 +107,7 @@ img {
   display: block;
   font-size: 1.4em;
   font-family: 'La Belle Aurore', cursive;
-  padding: 1em;
+  padding: 0 1em 0 0;
 }
 /* Navigation */
 .header .nav {
@@ -261,6 +261,7 @@ img {
 input.clipboard-link {
     display: inline-block;
     width: 180px;
+    height: 30px;
     margin: 0 -10px 0 0.5em;
     padding: 0 0 0 0.5em;
     font-size: 13px;
@@ -271,7 +272,8 @@ input.clipboard-link {
     border-bottom: 1px solid #aaa;
     border-left: 1px solid #aaa;
     outline: none;
-    height: 30px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
 .clippy {
     margin-top: -3px;
