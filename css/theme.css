@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* If Width larger than 1366px */
+/* If Width Larger than 1366px */
 @media only screen and (min-width: 1367px) {
     .logo img {
         position: absolute;
@@ -12,7 +12,7 @@
       text-align: center;
     }
 }
-/* If Width smaller than 1366px */
+/* If Width Smaller than 1366px */
 @media only screen and (max-width: 1366px) {
     .logo img {
       width: auto;
@@ -21,7 +21,7 @@
       padding: 0 1em 0 2em;
     }
 }
-/* If Width smaller than 768px */
+/* If Width Smaller than 768px */
 @media only screen and (max-width: 768px) {
     .logo img {
       width: auto;
@@ -30,7 +30,7 @@
       padding: 0 1em 1em 1em;
     }
 }
-/* If Width smaller than 480px */
+/* If Width Smaller than 480px */
 @media only screen and (max-width: 480px) {
     .header {
       text-align: center;
@@ -40,6 +40,10 @@
       height: auto;
       padding: 0 1em 1em 1em;
     }
+    .share {
+      display: block !important;
+      margin: 0 0 1em 0;
+    }
 }
 
 /* If Height Larger than 480px */
@@ -48,21 +52,14 @@
       overflow: hidden !important; /* scrollbar fix */
     }
 }
-/* If Width smaller than 480px */
-@media only screen and (max-width: 480px) {
-    .share {
-      display: block !important;
-      margin: 0 0 1em 0;
-    }
-}
-/* If Height smaller than 720px */
+/* If Height Smaller than 720px */
 @media only screen and (max-height: 720px) {
     .share {
       display: block !important;
       margin: 0 0 1em 0;
     }
 }
-/* If Height smaller than 480px */
+/* If Height Smaller than 480px */
 @media only screen and (max-height: 480px) {
     .featherlight .featherlight-content {
       overflow: scroll !important; /* scrollbar fix */
@@ -123,10 +120,10 @@ img {
 .header .nav li a {
   padding: 1em;
   text-decoration: none;
-  
+
 }
 .header .nav li a:hover {
-  
+
 }
 .header .nav-title {
   display: block;
@@ -221,8 +218,8 @@ img {
   min-width: 240px;
   max-width: 100%;
   max-height:75vh;
-}  
-.gallery-modal { 
+}
+.gallery-modal {
   /* Hide Modal Popup */
   display: none;
 }
@@ -318,7 +315,7 @@ img.clippy {
   position: relative;
   flex: 1;
   background: white;
-}     
+}
 .copyright {
   font-size: 1.2em;
 }
