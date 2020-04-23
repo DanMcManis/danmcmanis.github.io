@@ -286,11 +286,13 @@ img {
 }
 input.clipboard-link {
     display: inline-block;
-    width: 180px;
+    width: 100%;
+    max-width: 280px;
     height: 30px;
     margin: 0 -10px 0 0.5em;
     padding: 0 0 0 0.5em;
     font-size: 13px;
+    font-family: 'Lustria', serif;
     color: #000;
     background-color: #fff;
     border-top: 1px solid #aaa;
