@@ -237,11 +237,11 @@ img {
   /* Hide Modal Popup */
   display: none;
 }
-.info {
+.featherlight-content .info {
     padding: 1.4em 0 0.5em 0;
     text-align: center;
 }
-.title {
+.featherlight-content .title {
   display: block;
   padding: 0 0 0.7em 0;
   text-align: center;
@@ -249,21 +249,21 @@ img {
   line-height: 1em;
   vertical-align: middle;
 }
-.share {
+.featherlight-content .share {
   display: inline-block;
   text-align: center;
   vertical-align: middle;
 }
 /* If Height Smaller than 720px */
 @media only screen and (max-height: 720px) {
-    .share {
+    .featherlight-content .share {
       display: block !important;
       margin: 0 0 1em 0;
     }
 }
 /* If Width Smaller than 480px */
 @media only screen and (max-width: 480px) {
-    .share {
+    .featherlight-content .share {
       display: block !important;
       margin: 0 0 1em 0;
     }
