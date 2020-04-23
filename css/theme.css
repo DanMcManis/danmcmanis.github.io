@@ -36,7 +36,7 @@ img {
 /* Header */
 #layout-header {
   position: relative;
-  margin-bottom: 1.5em;
+  /*margin-bottom: 1.5em;*/
   padding: 1.2em 0;
   background: #fff;
 }
@@ -139,6 +139,11 @@ img {
   padding: 0 !important;
   padding-right: 0 !important;
   padding-left: 0 !important;
+}
+
+/* Layout Content */
+#layout-content {
+  padding-top: 1.5em;
 }
 
 /* Container */
