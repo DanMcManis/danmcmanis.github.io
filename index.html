@@ -125,7 +125,7 @@
                         <div class="col-xl-12">
 
                             <!-- Gallery -->
-                            <div id="gallery" class="gallery" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 300 }'>
+                            <div id="gallery" class="gallery">
 
                               <div class="grid-item" style="position: absolute; left: 300px; top: 591px;">
                                   <!-- DOM modal -->
@@ -1680,7 +1680,7 @@
 
             <!-- Scripts --> 
             <!-- jQuery -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
 
             <!-- Bootstrap -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha256-oKpAiD7qu3bXrWRVxnXLV1h7FlNV+p5YJBIr8LOCFYw=" crossorigin="anonymous"></script>
@@ -1710,8 +1710,8 @@
                       itemSelector: '.grid-item',
                       columnWidth: 300, 
                       isFitWidth: true,
-                      isAnimated: false,
-                      transitionDuration: 0
+                      isAnimated: true,
+                      //transitionDuration: 0,
                       //isAnimated: !Modernizr.csstransitions
                   });
               });
