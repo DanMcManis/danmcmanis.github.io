@@ -1682,6 +1682,9 @@
             <!-- jQuery -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
+            <!-- JQuery Images Loaded -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+
             <!-- Bootstrap -->
             <!-- Note: Compatible with jQuery 3.4.1, not 3.5.0 -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha256-oKpAiD7qu3bXrWRVxnXLV1h7FlNV+p5YJBIr8LOCFYw=" crossorigin="anonymous"></script>
@@ -1692,30 +1695,31 @@
             <!-- Masonry -->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
             <script type="application/javascript">
-              // Show Loading Gallery message
-              var $loading = $('#loading-gallery');
-              // Hide images
-              var $boxes = $('.grid-item');
-              $boxes.hide();
+                // Show Loading Gallery message
+                var $loading = $('#loading-gallery');
+                // Hide images
+                var $boxes = $('.grid-item');
+                $boxes.hide();
 
-              // Start Masonry after images have loaded
-              $(window).on('load', function() { 
-                  $loading.hide(); //Hide loading message
-                  $boxes.fadeIn(); //Show images
+                //$(window).on('load', function() {
+                $(document).ready(function() {
 
-                  // Options
-                  //var $ = jQuery;
-                  //var $container = $('#gallery');
-                  //    $container.masonry({
-                  $('#gallery').masonry({
-                      itemSelector: '.grid-item',
-                      columnWidth: 300, 
-                      isFitWidth: true,
-                      isAnimated: true
-                      //transitionDuration: 0,
-                      //isAnimated: !Modernizr.csstransitions
-                  });
-              });
+                    $loading.hide(); //Hide loading message
+                    $boxes.fadeIn(); //Show images
+
+                    var $container = $("#gallery");
+
+                    $container.imagesLoaded(function () {
+                        $container.masonry({
+                            itemSelector: '.grid-item',
+                            columnWidth: 300, 
+                            isFitWidth: true,
+                            isAnimated: true
+                            //transitionDuration: 0,
+                            //isAnimated: !Modernizr.csstransitions
+                        });
+                    });
+                });
             </script>
 
             <!-- Featherlight -->
