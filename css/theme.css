@@ -225,13 +225,13 @@ img {
   max-height:75vh;
 }
 /* If Height Larger than 480px */
-@media only screen and (min-height: 480px) {
+@media only screen and (min-height: 481px) {
     .featherlight .featherlight-content {
       overflow: hidden !important; /* scrollbar fix */
     }
 }
 
-/* If Height Smaller than 480px */
+/* If Height Smaller than or Equal to 480px */
 @media only screen and (max-height: 480px) {
     .featherlight .featherlight-content {
       overflow: scroll !important; /* scrollbar fix */
@@ -259,13 +259,6 @@ img {
   text-align: center;
   vertical-align: middle;
 }
-/* If Height Smaller than 720px */
-@media only screen and (max-height: 720px) {
-    .featherlight-content .share {
-      display: block !important;
-      margin: 0 0 1em 0;
-    }
-}
 /* If Width Smaller than 480px */
 @media only screen and (max-width: 480px) {
     .featherlight-content .share {
@@ -273,6 +266,14 @@ img {
       margin: 0 0 1em 0;
     }
 }
+/* If Height Smaller than or Equal 720px */
+@media only screen and (max-height: 720px) {
+    .featherlight-content .share {
+      display: block !important;
+      margin: 0 0 1em 0;
+    }
+}
+
 
 /* Clipboard.js */
 .clipboard-title {
@@ -352,6 +353,12 @@ img.clippy {
   padding: 1.5em 0 2em 0;
   background: #fff;
 }
+/* If Width Smaller than or Equal to 720px */
+@media only screen and (max-width: 720px) {
+  #layout-footer {
+    text-align: center;
+  }
+}
 
 .copyright {
   font-size: 1.2em;
@@ -360,6 +367,15 @@ img.clippy {
   color: black;
 }
 
-.footer-share {
-  float: right;
+/* If Width Larger than 720px */
+@media only screen and (min-width: 721px) {
+  .footer-share {
+    float: right;
+  }
+}
+/* If Width Smaller than or Equal to 720px */
+@media only screen and (max-width: 720px) {
+  .footer-share {
+    padding-top: 1em;
+  }
 }
