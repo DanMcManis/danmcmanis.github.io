@@ -84,7 +84,7 @@ img {
 /* If Width Smaller or Equal to 991px */
 @media only screen and (max-width: 991px) {
   .navbar {
-    justify-content: right;
+    justify-content: flex-end;
   }
 }
 .navbar-toggler {
@@ -116,7 +116,7 @@ img {
 /* If Width Smaller or Equal to 1366px */
 @media only screen and (max-width: 1366px) {
   .navbar-nav {
-      justify-content: right;
+      justify-content: flex-end;
   }
 }
 /* If Width Smaller or Equal to 800px */
