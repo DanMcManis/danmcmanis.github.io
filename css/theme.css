@@ -346,6 +346,13 @@ img.clippy {
   height: 15px !important;
 }
 
+.buy {
+  display: inline-block;
+  font-family: 'Lustria', serif;
+  font-size: 1em;
+  margin-left: 0.5em;
+}
+
 /* Footer */
 #layout-footer {
   flex: 1 auto;
@@ -389,7 +396,7 @@ img.clippy {
 .resp-sharing-button__link {
     text-decoration: none;
     color: #fff;
-    margin: 0 0.25em;
+    margin: 0 0.2em;
     vertical-align: top;
 }
 
