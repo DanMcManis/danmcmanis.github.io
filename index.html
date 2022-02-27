@@ -22,7 +22,7 @@
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="title" content="Dan McManis ~ Watercolor Art" />
     <meta name="description" content="Dan McManis ~ Watercolor Art" />
     <meta name="keywords" content="Dan, McManis, Art, Artist, Artistry, Watercolor, Poster, Posters" />
@@ -1663,7 +1663,7 @@
                             </a>
                         </div>
 
-                        <div id="loading-gallery">
+                        <div class="loading-gallery">
                             Loading Gallery
                         </div>
 
@@ -1764,7 +1764,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="application/javascript">
         // Show Loading Gallery message
-        var $loading = $('#loading-gallery');
+        var $loading = $('.loading-gallery');
         // Hide images
         var $boxes = $('.grid-item');
         $boxes.hide();
@@ -1782,10 +1782,10 @@
                     itemSelector: '.grid-item',
                     columnWidth: 0,
                     gutter: 32,
-                    isFitWidth: true,
-                    isAnimated: true
-                        //transitionDuration: 0,
-                        //isAnimated: !Modernizr.csstransitions
+                    //isFitWidth: true,
+                    //isAnimated: true
+                    //transitionDuration: 0,
+                    //isAnimated: !Modernizr.csstransitions
                 });
             });
         });
