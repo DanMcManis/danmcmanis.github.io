@@ -268,83 +268,65 @@ img {
 }
 
 
-/* If Width Larger than 1599px */
-
-@media only screen and (min-width: 1600px) {
-    .gallery .grid-item {
-        width: 18%;
-    }
-}
-
-
-/* If Width Smaller or Equal to 1599px */
-
-@media only screen and (max-width: 1599px) {
-    .gallery .grid-item {
-        width: 18%;
-    }
-}
-
-
-/* If Width Smaller or Equal to 1440px */
-
-@media only screen and (max-width: 1440px) {
-    .gallery .grid-item {
-        width: 18%;
-    }
-}
-
-
-/* If Width Smaller or Equal to 1366px */
-
-@media only screen and (max-width: 1366px) {
-    .gallery .grid-item {
-        width: 18%;
-    }
-}
-
-
-/* If Width Smaller or Equal to 1200px */
-
-@media only screen and (max-width: 1200px) {
-    .gallery .grid-item {
-        width: 23%;
-    }
-}
-
-
-/* If Width Smaller or Equal to 960px */
-
-@media only screen and (max-width: 960px) {
-    .gallery .grid-item {
-        width: 30%;
-    }
-}
-
-
-/* If Width Smaller or Equal to 810px */
-
-@media only screen and (max-width: 810px) {
-    .gallery .grid-item {
-        width: 30%;
-    }
-}
-
-
-/* If Width Smaller or Equal to 640px */
-
-@media only screen and (max-width: 640px) {
-    .gallery .grid-item {
-        width: 47%;
-    }
-}
-
-
 /* If Width Smaller or Equal to 480px */
 
 @media only screen and (max-width: 480px) {
-    .gallery .grid-item {
+    #gallery .grid-item {
         width: 100%;
+    }
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+    #gallery .grid-item {
+        width: calc(50% - 22px);
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    #gallery .grid-item {
+        width: calc(33.3% - 22px);
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    #gallery .grid-item {
+        width: calc(33.3% - 22px);
+    }
+}
+
+
+/* X-Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    #gallery .grid-item {
+        width: calc(20% - 22px);
+    }
+}
+
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+
+@media (min-width: 1400px) {
+    #gallery .grid-item {
+        width: calc(20% - 22px);
+    }
+}
+
+
+/* XX-Large devices (larger desktops, 1600px and up) */
+
+@media (min-width: 1600px) {
+    #gallery .grid-item {
+        width: calc(20% - 22px);
     }
 }
 
